@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Habit tracker</title>
+      <!-- Font Awesome 6 Free CDN -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+      <script src="script.js" defer></script>
+      <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <div class="app">
+
+            <div class="firstDisplay" id="firstDisplay">
+
+                  <div class="logoPlace">
+                     <div class="left">
+                        <img src="_Happy Habits - Habit Tracker-Photoroom.png" alt="" class="logoImg">
+                        <label for="" class="logoName">Habiter</label>
+                     </div>
+                     <div class="right">
+                        <button id="notificationBtn">
+                           <i class="fa-regular fa-bell"></i>
+                        </button>
+                     </div>
+                  </div>
+
+                  <div class="greetingDiv">
+                     <div class="c1">
+                        <h2 class="greetingHeader">Morning👋</h2>
+                     </div>
+                     <div class="c2">
+                        <label for="" class="progressPercent" id="progressPercent">0%</label>
+                        <label for="" class="progressText" id="progressText"></label>
+                     </div>
+                  </div>
+
+                  <div class="tastContainer" id="taskContainer">
+                     <div class="todayTaskContainer" id="todayTaskContainer">
+                        <label for="" class="todayTask">Today Task(<span id="todayTaskNumber">0</span>)</label>
+                        <button class="seeAllBtn" id="seeAllBtn">See All</button>
+                     </div>
+                     <div class="allTasks" id="allTasks">
+                        <div class="bars">
+                           <button class="allBtn" id="allBtn">All</button>
+                           <button class="completedBtn" id="completedBtn">Completed</button>
+                        </div>
+                        <ul class="ul" id="ul">
+                           <div class="list1">
+                              
+                           </div>
+                           <div class="completedList" id="completedList">
+
+                           </div>
+                        </ul>
+                        
+                     </div>
+                  </div>
+
+            </div>
+
+            <div class="addTaskDisplay" id="addTaskDisplay">
+                  <div class="top">
+                     <button class="leftArrow" id="leftArrow">
+                        <i class="fa-solid fa-arrow-left"></i>
+                     </button>
+                     <h2 class="createTodoText">Create New Task</h2>
+                  </div>
+                  <div class="allInputs">
+                     <div class="taskTitle">
+                        <label for="" class="title">Title</label>
+                        <input type="text" class="taskNameInput" id="taskNameInput" placeholder="Task Title">
+                     </div>
+                     <div class="dateAndStartTime">
+                        <div class="d">
+                           <label for="" class="date">Date</label>
+                           <input type="date" name="" placeholder="Date" id="dateInput" class="dateInput">
+                        </div>
+                        <div class="s">
+                           <label for="" class="startTime">Start Time</label>
+                           <input type="time" id="startTime" placeholder="Start Time">
+                        </div>
+                        
+                     </div>
+                        <div class="categoryDiv">
+                              <label for="" class="selectCategory">Select Category</label>
+                              <select name="" id="category">
+                                 <option value="read">📚  Read</option>
+                                 <option value="work">💻  Work</option>
+                                 <option value="meal">🍽  Meal</option>
+                                 <option value="freeTime">📍  Free Time</option>
+                                 <option value="exercise">💪  Exercise</option>
+                           </select>
+                        </div>
+                        <button class="saveTaskBtn" id="saveTaskBtn">Save</button>
+                  </div>
+            </div>
+
+            <div class="allTasksDisplay" id="allTasksDisplay">
+               <div class="top">
+                  <button class="leftArrow" id="leftArrow">
+                     <i class="fa-solid fa-arrow-left"></i>
+                  </button>
+                  <label class="todayTasksText">Today Tasks (<span id="todayTasks">0</span>)</label>          
+               </div>
+               <div class="allTasks" id="allTasks">
+                  
+                  <ul class="ul" id="ul2">
+                     
+                  </ul>
+               </div>
+            </div>
+
+            <div class="chartDisplay" id="chartDisplay">
+               <div class="logoPlace">
+                  <div class="left">
+                     <img src="_Happy Habits - Habit Tracker-Photoroom.png" alt="" class="logoImg">
+                     <label for="" class="logoName">Habiter</label>
+                  </div>
+                  <div class="right">
+                     <button id="notificationBtn">
+                        <i class="fa-regular fa-bell"></i>
+                     </button>
+                  </div>
+               </div>
+               <div class="comingSoonDiv">
+                  <h2 class="comingSoon">Coming Soon</h2>
+                  <button class="backBtn" id="backBtn">Back to Home</button>
+               </div>
+            </div>
+
+            <div class="profileDisplay" id="profileDisplay">
+               <div class="logoPlace">
+                  <div class="left">
+                     <img src="_Happy Habits - Habit Tracker-Photoroom.png" alt="" class="logoImg">
+                     <label for="" class="logoName">Habiter</label>
+                  </div>
+                  <div class="right">
+                     <button id="notificationBtn">
+                        <i class="fa-regular fa-bell"></i>
+                     </button>
+                  </div>
+               </div>
+               <div class="comingSoonDiv">
+                  <h2 class="comingSoon">Coming Soon</h2>
+                  <button class="backBtn" id="backBtn">Back to Home</button>
+               </div>
+            </div>
+
+      </div>
+
+
+   <div class="bottomContainer">
+      <button class="homeBtn" id="homeBtn">
+         <i class="fa-solid fa-house"></i>
+      </button>
+      <button class="taskBtn" id="taskBtn">
+         <i class="fa-regular fa-calendar"></i>
+      </button>
+      <button class="addTaskBtn" id="addTaskBtn">
+         <i class="fa-solid fa-plus add" ></i>
+      </button>
+      <button class="chartBtn" id="chartBtn">
+         <i class="fa-solid fa-chart-simple"></i>
+      </button>
+      <button class="profileBtn" id="profileBtn">
+         <i class="fa-solid fa-user"></i>
+      </button>
+   </div>
+</body>
+</html>

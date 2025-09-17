@@ -1,0 +1,445 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+:root{
+   --text-color:white;
+   --text-color2: rgb(234, 231, 231);
+   --body-bg:  rgb(16, 12, 12);
+   --toggle-bg:  rgba(146, 246, 146, 0.393);
+   --card-bg:  rgb(26, 25, 25);
+   --card-bg-hover:  rgb(39, 39, 39);
+   --gray-color:white;
+   --slight-red-color:rgb(255, 34, 0);
+   --btn-color-orange:rgb(251, 105, 0);
+   --btn-color-green:rgb(66, 236, 111);
+   --btn-color-green-hover: rgb(105, 233, 139);
+   --btn-color-orange-hover:rgb(255, 123, 28);
+}
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: poppins;
+}
+body{
+   background-color: var(--body-bg);
+   color: var(--text-color);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   height: 100vh;
+   width: 100vw;
+}
+button{
+   background: none;
+   outline: none;
+   border: none;
+   color: var(--text-color2);
+}
+i{
+   color: black;
+   background: transparent;
+}
+.app{
+   width: 100%;
+   height: 100vh;
+   padding: 10px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.firstDisplay{
+   width: 100%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+}
+.logoPlace{
+   height: 50px;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 5px;
+}
+.logoPlace .left{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+}
+.logoImg{
+   width: 65px;
+   padding: none;
+}
+.logoPlace .logoName{
+   margin-left: -10px;
+}
+.logoPlace .right{
+   margin-right: 5px;
+}
+.logoPlace .right button{
+   background: none;
+   outline: none;
+   border: none;
+   cursor: pointer;
+}
+.logoPlace .right button i{
+   color: var(--text-color);
+   font-size: 18px;
+}
+.greetingDiv{
+   width: 100%;
+   height: 150px;
+   background-color: var(--card-bg);
+   border-radius: 10px;
+   display: flex;
+   flex-direction: column;
+   padding: 10px;
+   color: var(--text-color2);
+}
+.greetingDiv .c1{
+   display: flex;
+}
+.greetingDiv .c2{
+   display: flex;
+   gap: 10px;
+   margin-top: 10px;
+}
+.greetingDiv .c2 .progressPercent{
+   font-size: 2.5rem;
+}
+.greetingDiv .c2 .progressText{
+   display: flex;
+   color: rgb(204, 200, 200);
+   margin-left: 20px;
+}
+.tastContainer{
+   display: flex;
+   flex-direction: column;
+   margin-top: 10px;
+}
+.tastContainer .todayTaskContainer{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   margin-bottom: 3px;
+}
+.tastContainer .todayTaskContainer button{
+   background: none;
+   color: var(--slight-red-color);
+   border: none;
+   outline: none;
+   cursor: pointer;
+}
+.tastContainer .todayTaskContainer .todayTask{
+   font-size: 16px;
+}
+.allTasks{
+   background-color: var(--card-bg-hover);
+   width: 100%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   border-radius: 10px;
+   padding: 5px;  
+}
+.ul{
+   display: flex;
+   flex-direction: column;
+   gap: 5px;
+   width: 100%;
+   height: 100%;
+}
+.lists{
+   width: 100%;
+   list-style: none;
+   min-height: 70px;
+   padding: 8px 8px;
+   border-radius: 8px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 5px;
+   position: relative;
+}
+.status{
+   position: absolute;
+   top: 0;
+}
+.ul .bottom{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-around;
+   gap :50px;
+   width: 100%;
+}
+.list1{
+   width: 100%;
+   list-style: none;
+   background-color: var(--card-bg);
+   height: auto;
+   padding: 5px 8px;
+   border-radius: 8px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   cursor: pointer;
+}
+.rows{
+   margin-top: 8px;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   font-size: 14px;
+}
+.lists .rows .taskName{
+   margin-left: 5px;
+   font-size: 14px;
+   flex: 1;
+   word-break: break-all;
+   word-wrap: break-word;
+}
+.lists1 .bottom .date{
+   padding: 5px 8px ;
+   background-color: var(--btn-color-green);
+
+}
+.lists button{
+   background: none;
+   border: none;
+   outline: none;
+}
+.allTasks .bars{
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   gap: 10px;
+   margin-bottom: 10px;
+   padding-left: 20px;
+}
+.allTasks .bars button{
+   padding: 8px 15px;
+   background-color: var(--btn-color-green);
+   border-radius: 5px;
+   font-weight: 700;
+   color: black;
+   cursor: pointer;
+}
+.completedLists{
+   display: flex;
+   flex-direction: column;
+   gap: 5px;
+   width: 100%;
+   height: 100%;
+}
+.allTasks .bars button:hover{
+   background-color: var(--btn-color-green-hover);
+}
+.lists button i{
+   color: var(--slight-red-color);
+   font-size: 18px;
+}
+#checkbox{
+   color: var(--btn-color-green);
+   font-size: 20px;
+   cursor: pointer;
+}
+.bottomContainer{
+   display: flex;
+   width: 100%;
+   padding: 10px;
+   flex-direction: row;
+   align-items: center;
+   height: 50px;
+   justify-content: space-evenly;
+   padding: 5px;
+   position: fixed;
+   bottom: 0;
+   background: var(--body-bg);
+   backdrop-filter: blur(10px);
+}
+.bottomContainer button{
+   padding: 10px;
+   cursor: pointer;
+   width: 35px;
+   background: none;
+   border: none;
+   outline: none;
+   height: 35px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.bottomContainer button i.active{
+   background-color: var(--btn-color-green-hover);
+}
+.bottomContainer button i{
+   font-size: 20px;
+   color: var(--btn-color-orange);
+}
+.bottomContainer button.addTaskBtn{
+   background: var(--btn-color-orange);
+   border-radius: 50%;
+   color: white;
+}
+.bottomContainer button .add{
+   color: var(--text-color);
+}
+
+.addTaskDisplay{
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   height: 100%;
+   display: none;
+}
+.addTaskDisplay .top{
+   height: 50px;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   gap: 10px;
+}
+.addTaskDisplay .top button{
+   background: none;
+   border: none;
+   cursor: pointer;
+   outline: none;
+   padding: 5px;
+   height: 45px;
+   width: 45px;
+}
+.addTaskDisplay .top button i{
+   color: var(--btn-color-orange);
+   font-size: 20px;
+}
+.addTaskDisplay .allInputs{
+   color: var(--text-color2);
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 20px;
+   gap: 10px;
+}
+.addTaskDisplay .allInputs .taskTitle,.d,.s, .categoryDiv{
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+}
+.addTaskDisplay .allInputs input{
+   padding: 14px;
+   background-color: var(--card-bg);
+   border: none;
+   border-radius: 10px;
+   font-size: 15px;
+   outline: none;
+   color: var(--text-color2);
+}
+.addTaskDisplay .allInputs input::placeholder{
+   color: rgb(78, 77, 77);
+}
+.addTaskDisplay .dateAndStartTime{
+   display: flex;
+   width: 100%;
+   gap: 20px;
+}
+.addTaskDisplay .allInputs #category{
+   padding: 14px;
+   color: var(--text-color2);
+   background-color: var(--card-bg);
+   border: none;
+   border-radius: 10px;
+   font-size: 15px;
+   display: flex;
+   flex-direction: row;
+   cursor: pointer;
+   padding-left: 5px;
+   outline: none;
+   margin-top: 10px;
+}
+.addTaskDisplay .allInputs #category option{
+   display: flex;
+   flex-direction: column;
+   gap: 2px;
+   outline: none;
+   border: none;
+   background-color: var(--card-bg-hover);
+   cursor: pointer;
+}
+.saveTaskBtn{
+   display: flex;
+   width: 100%;
+   align-items: center;
+   justify-content: center;
+   padding: 13px;
+   background-color: var(--btn-color-green);
+   outline: none;
+   border: none;
+   border-radius: 10px;
+   cursor: pointer;
+   font-size: 1.1rem;
+   color: var(--text-color);
+   font-weight: 700;
+}
+.allTasksDisplay{
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   display: none;
+}
+.allTasksDisplay .top{
+   height: 50px;
+   display: flex;
+   flex-direction: row;
+   gap: 20px;
+   align-items: center;
+}
+.allTasksDisplay .top button{
+   height: 40px;
+   width: 40px;
+   font-size: 20px;
+   background: none;
+   outline: none;
+   border: none;
+   cursor: pointer;
+}
+.allTasksDisplay .top button i{
+   color: var(--btn-color-orange);
+}
+.chartDisplay, .profileDisplay{
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   height: 100%;
+   width: 100%;
+   color: var(--text-color2);
+   display: none;
+}
+.comingSoonDiv{
+   height: 100%;
+   width: 100%;
+   display: flex;flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.backBtn{
+   color: var(--btn-color-orange);
+   font-size: 18px;
+   text-decoration: underline;
+   cursor: pointer;
+}
+.profileDisplay{
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   height: 100%;
+   width: 100%;
+   color: var(--text-color2);
+   display: none;
+}
+.completed{
+   background: var(--toggle-bg);
+}
